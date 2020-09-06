@@ -78,9 +78,14 @@ button, input, a {
 
 /* tipography */
 section {
-	padding: 10rem 0;
+	padding: 4rem 0;
 }
-
+.section-header {
+	margin:2rem 0 6rem;
+	.bold();
+	font-size: 2rem;
+	text-align: center;
+}
 /* main */
 
 .main {
@@ -188,6 +193,29 @@ section {
 }
 .logo, .wrap, .phone-block {
 	margin-top:2rem;
+}
+.features {
+	&-block {
+		text-align: center;
+		outline: none !important;
+	h3 {
+	.bold();
+		font-size: 1.3rem;
+		margin: 3rem 0;
+}
+	p{
+		display: inline-block;
+		width: 90%;
+		font-size: 1.0rem;
+	}
+	}
+	&-img {
+		img{
+		display: block;
+		margin:0 auto;
+		height: 4rem;
+	}
+}
 }
 @media(min-width: 1200px) {
 	.main {
