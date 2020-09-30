@@ -77,10 +77,22 @@ section {
 	padding: 4rem 0;
 }
 .section-header {
-	margin:2rem 0 6rem;
+&-light {
+	color:@light;
+	font-weight: 100;
+	}
+h2 {
 	.bold();
 	font-size: 2rem;
+}
+p {
+	margin-top: 3rem;
+	font-size:1.0rem;
+}
+	margin:2rem 0 6rem;
+	font-size: 2rem;
 	text-align: center;
+	font-weight: 900;
 }
 /* main */
 
@@ -213,6 +225,59 @@ section {
 	}
 }
 }
+
+/* Prices */
+
+.price {
+	background: @icon-color url(../img/prices/prices-bg.png) center;
+&-button {
+	margin-top: 2.5rem;
+	text-align: right;
+}
+&-block {
+	padding: 1rem 2rem;
+	min-height: 37rem;
+	text-align: center;
+	background:@light;
+	box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0, 17);
+	margin-bottom: 1rem;
+}
+h4 {
+	font-size:1.1rem;
+	.bold();
+	margin: 2rem 0;
+}
+img {
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 1rem;
+}
+&-list {
+	padding: 0;
+	margin-top: 1rem;
+	list-style: none;
+	min-height: 7rem;
+	font-size:1rem;
+	font-weight: 700;
+	line-height: 1.6;
+}
+li {
+	&:before {
+	  content:'';
+	  display: inline-block;
+	  width: 1.5rem;
+	  height: 1.5rem;
+	  margin-right: 0.5rem;
+	  background:url('../img/circle.png') no-repeat center;
+	  background-size: 1rem;
+	  vertical-align: bottom;
+	}
+}
+&-tag {
+	font-size: 1.1rem;
+	.bold();
+}
+}
 .popup {
 	display: none;
 	position:fixed;
@@ -280,6 +345,17 @@ section {
 	.popupmodal {
 		margin-bottom: 0rem;
 	}
+	.price{
+	&-button {
+		text-align: center;
+		padding-bottom: 3rem;
+	}
+	}
+	.section {
+	&-header {
+		margin: 0;
+	}
+	}
 }
 @media(max-width: 767px) {
 	.main {
@@ -293,6 +369,11 @@ section {
 	    margin-top: 0rem;
 	    height: 3rem;
 }
+	.price{
+	&-block {
+		margin-bottom: 1rem;
+	}
+	}
 }
 @media(max-width:400px) {
 .header-content h1 {
